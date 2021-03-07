@@ -80,53 +80,11 @@ def all_holidays_with_bbq(holiday_hash)
   # include the string "BBQ"
   new_arr = []
   holiday_hash.map do |seasonz, holidayz|
-    # seasonz_str = seasonz.to_s
-    # seasonz_arr = seasonz_str.split
     holidayz.map do |act_holidayz, attributez|
       if attributez.include?("BBQ")
         new_arr << act_holidayz
       end
     end
-      #   if word.include?("BBQ")
-      #     return act_holidayz
-      #   end
-      # end
-
-    #   act_holidayz[attributez] == "bar"
-    # end
-    
-    # seasonz.each do |act_holidayz, attributez|
-    #   act_holidayz.key("bar")
-    # end
-    # seasonz_str.select do |key, valuez|
-    #   valuez = valuez.to_s
-    #   valuez_str.include?("bar")
-  end#.flatten.compact
+  end
   new_arr
 end
-
-
-# def second_supply_for_fourth_of_july(holiday_hash)
-#   # given that holiday_hash looks like this:
-#   # {
-#   #   :winter => {
-#   #     :christmas => ["Lights", "Wreath"],
-#   #     :new_years => ["Party Hats"]
-#   #   },
-#   #   :summer => {
-#   #     :fourth_of_july => ["Fireworks", "BBQ"]
-#   #   },
-#   #   :fall => {
-#   #     :thanksgiving => ["Turkey"]
-#   #   },
-#   #   :spring => {
-#   #     :memorial_day => ["BBQ"]
-#   #   }
-#   # }
-#   # return the second element in the 4th of July array
-#   holiday_hash[:summer][:fourth_of_july][1]
-# end
-
-
-
-
